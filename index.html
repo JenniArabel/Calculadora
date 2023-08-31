@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calculadora">
+        <form name="calculator">
+            <input type="textfield" id="resultado" value="" autocomplete="off" readonly> <!-- solo lectura - autolectura desactivado -->
+
+            <input type="button" value="7" onclick="appendToDisplay('7')" class="gray">
+            <input type="button" value="8" onclick="appendToDisplay('8')" class="gray">
+            <input type="button" value="9" onclick="appendToDisplay('9')" class="gray">
+            <input type="button" value="+" onclick="appendToDisplay('+')" class="blueviolet">
+            <br>
+            <input type="button" value="4" onclick="appendToDisplay('4')" class="gray">
+            <input type="button" value="5" onclick="appendToDisplay('5')" class="gray">
+            <input type="button" value="6" onclick="appendToDisplay('6')" class="gray">
+            <input type="button" value="-" onclick="appendToDisplay('-')" class="blueviolet">
+            <br>
+            <input type="button" value="1" onclick="appendToDisplay('1')" class="gray">
+            <input type="button" value="2" onclick="appendToDisplay('2')" class="gray">
+            <input type="button" value="3" onclick="appendToDisplay('3')" class="gray">
+            <input type="button" value="X" onclick="appendToDisplay('*')" class="blueviolet">
+            <br>
+            <input type="button" value="0" onclick="appendToDisplay('0')" class="gray">
+            <input type="button" value="C" onclick="clearDisplay()" >
+            <input type="button" value="=" onclick="calcular()">
+            <input type="button" value="/" onclick="appendToDisplay('/')" class="blueviolet">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
